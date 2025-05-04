@@ -1,0 +1,228 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+/* Contenedor común para todas las secciones */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #4682B4;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Secciones */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4682B4;
+    text-align: center;
+}
+
+/* Sobre mí */
+#sobre-mi p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2F4F4F;
+}
+
+/* Habilidades */
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#habilidades li {
+    font-size: 1.1rem;
+    color: #2F4F4F;
+}
+
+/* Proyectos */
+#proyectos .proyecto {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#proyectos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#proyectos img:hover {
+    transform: scale(1.05);
+}
+
+/* Contacto */
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contacto li {
+    font-size: 1.1rem;
+    color: #2F4F4F;
+}
+
+#contacto a {
+    color: #4682B4;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4682B4;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Botón de Scroll al final */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #2F4F4F;
+}
+/* Tema claro (por defecto) */
+body {
+    background-color: #F0F8FF;
+    color: #0D0D0D;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema oscuro */
+body.dark-mode {
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+}
+
+/* Ajustes para otros elementos (podés personalizar más según tu diseño) */
+header, section, footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+    background-color: #1A1A1A;
+    color: #F2F2F2;
+}
+
+/* Estilo del botón */
+#toggleThemeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid #10403B;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggleThemeBtn:hover {
+    background-color: #8AA6A3;
+    color: white;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #127369;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #10403B;
+  }
+  
+  .form-message {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-message.success {
+    color: green;
+  }
+  
+  .form-message.error {
+    color: red;
+  }
+  

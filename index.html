@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriel Policía - Mini CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="hidden">
+    <div class="container">
+      <h1>Gabriel Policía</h1>
+      <p>Desarrollador Web Junior</p>
+    </div>
+  </header>
+
+  <!-- Botón modo oscuro -->
+  <button id="toggleThemeBtn" title="Cambiar tema">
+    <span id="themeIcon">🌙</span>
+  </button>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="hidden">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>Soy un apasionado de la programación y la tecnología. Mi objetivo es seguir aprendiendo y creciendo como desarrollador web.</p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="hidden">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="hidden">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="proyecto">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 1" />
+        <h3>Generador de Contraseñas Seguras</h3>
+        <p>Una herramienta para generar contraseñas seguras de manera rápida y sencilla.</p>
+      </div>
+      <div class="proyecto">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 2" />
+        <h3>To-Do List</h3>
+        <p>Una lista de tareas interactiva que ayuda a organizar las actividades del día a día.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section id="educacion" class="hidden">
+    <div class="container">
+      <h2>Educación</h2>
+      <p><strong>Licenciatura en Programación Web</strong> - Universidad XYZ (2022)</p>
+      <p><strong>Curso de JavaScript Avanzado</strong> - Curso Online (2023)</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+
+    <section id="contacto" class="hidden">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm" novalidate>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+  
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+  
+        <button type="submit">Enviar mensaje</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </div>
+    </section>
+  
+
+  <!-- Footer -->
+  <footer class="hidden">
+    <p>© 2025 Gabriel Policía — Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button id="scrollToTopBtn" title="Volver arriba">↑</button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
